@@ -6,36 +6,52 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>如何在Github上搭建个人博客--主题篇 | 天空树</title>
+  <title>群晖NAS搭建游戏服务器--DNF篇 | 天空树</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简介在Hexo搭建的博客上引入yilia主题">
+  <meta name="description" content="简介利用群晖NAS和公网ip搭建一个可以邀请外网的小伙伴来玩的DNF服务器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何在Github上搭建个人博客--主题篇">
-<meta property="og:url" content="http://example.com/2021/01/07/2021-1-7%20%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2--%E4%B8%BB%E9%A2%98%E7%AF%87/index.html">
+<meta property="og:title" content="群晖NAS搭建游戏服务器--DNF篇">
+<meta property="og:url" content="http://example.com/2021/01/14/2021-1-14%20%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--DNF%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="天空树">
-<meta property="og:description" content="简介在Hexo搭建的博客上引入yilia主题">
+<meta property="og:description" content="简介利用群晖NAS和公网ip搭建一个可以邀请外网的小伙伴来玩的DNF服务器">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/08/1062cbb49a4290228.md.png">
-<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/08/28d89731f35f5e617.th.png">
-<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/08/34ff7c40728f8b90d.md.png">
-<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/08/4395bdff060130269.md.png">
-<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/08/536873e935fd74e01.md.png">
-<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/08/6fbf0f0fd1eb4e6a7.md.png">
-<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/08/7b11219c188cf737f.md.png">
-<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/08/8319f2918287fb675.md.png">
-<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/08/9f250d0d2d0e4118b.md.png">
-<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/08/1090287be92cc793b9.md.png">
-<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/08/1148f6813582d7c127.md.png">
-<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/08/122b8d6976b2c839e5.md.png">
-<meta property="article:published_time" content="2021-01-07T08:55:27.000Z">
-<meta property="article:modified_time" content="2021-01-08T08:00:15.645Z">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/1.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/2.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/3.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/4.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/5.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/6.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/7.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/8.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/9.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/10.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/11.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/12.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/13.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/14.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/15.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/16.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/17.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/18.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/19.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/20.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/21.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/22.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/23.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/24.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/25.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/26.md.png">
+<meta property="og:image" content="https://nas.minkeren.com:8001/images/2021/01/14/27.md.png">
+<meta property="article:published_time" content="2021-01-14T12:47:27.000Z">
+<meta property="article:modified_time" content="2021-01-14T13:10:14.525Z">
 <meta property="article:author" content="DreamStalk">
-<meta property="article:tag" content="hexo">
-<meta property="article:tag" content="github">
-<meta property="article:tag" content="yilia主题">
-<meta property="article:tag" content="fontawesome图库">
+<meta property="article:tag" content="VMM虚拟机">
+<meta property="article:tag" content="centos 5.8">
+<meta property="article:tag" content="一键服务端">
+<meta property="article:tag" content="客户端">
+<meta property="article:tag" content="统一登录器">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://nas.minkeren.com:8001/images/2021/01/08/1062cbb49a4290228.md.png">
+<meta name="twitter:image" content="https://nas.minkeren.com:8001/images/2021/01/14/1.md.png">
   
     <link rel="alternative" href="/atom.xml" title="天空树" type="application/atom+xml">
   
@@ -189,20 +205,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2021-1-7 如何在Github上搭建个人博客--主题篇" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2021-1-14 群晖NAS应用--DNF服务器搭建" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      如何在Github上搭建个人博客--主题篇
+      群晖NAS搭建游戏服务器--DNF篇
     </h1>
   
 
         
-        <a href="/2021/01/07/2021-1-7%20%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2--%E4%B8%BB%E9%A2%98%E7%AF%87/" class="archive-article-date">
-  	<time datetime="2021-01-07T08:55:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-07</time>
+        <a href="/2021/01/14/2021-1-14%20%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--DNF%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/" class="archive-article-date">
+  	<time datetime="2021-01-14T12:47:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-14</time>
 </a>
 		 
 		 <!-- 开始添加字数统计-->
@@ -212,7 +228,7 @@
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
         <!--这里样式可以自己定制-->
-        <span class="post-count" style="font-size: 16px;color: grey">2.6k字</span>
+        <span class="post-count" style="font-size: 16px;color: grey">1.7k字</span>
       </span>
     </span>
     
@@ -221,7 +237,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-        <span class="post-count" style="font-size: 16px;color: grey">11分</span>
+        <span class="post-count" style="font-size: 16px;color: grey">6分</span>
       </span>
     </span>
 </div>
@@ -244,310 +260,120 @@
     <div class="article-entry" itemprop="articleBody">
 			
   
-				<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><h3 id="在Hexo搭建的博客上引入yilia主题"><a href="#在Hexo搭建的博客上引入yilia主题" class="headerlink" title="在Hexo搭建的博客上引入yilia主题"></a>在Hexo搭建的博客上引入yilia主题</h3><a id="more"></a>
+				<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><h3 id="利用群晖NAS和公网ip搭建一个可以邀请外网的小伙伴来玩的DNF服务器"><a href="#利用群晖NAS和公网ip搭建一个可以邀请外网的小伙伴来玩的DNF服务器" class="headerlink" title="利用群晖NAS和公网ip搭建一个可以邀请外网的小伙伴来玩的DNF服务器"></a>利用群晖NAS和公网ip搭建一个可以邀请外网的小伙伴来玩的DNF服务器</h3><a id="more"></a>
 <hr>
-<h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h2><p>更新日期：<br>2021-1-8</p>
-<p>更新内容：<br>1.增加了fontwaesome下载链接；<br>2.增加了图片说明。</p>
+<h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h2><p>更新日期：<br>2021-1-14</p>
+<p>更新内容：</p>
 <hr>
 <hr>
-<h2 id="文章链接"><a href="#文章链接" class="headerlink" title="文章链接"></a>文章链接</h2><p><a href="/2021/01/06/2021-1-6%20%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2--%E5%9F%BA%E7%A1%80%E7%AF%87/">如何在Github上搭建个人博客–基础篇</a></p>
+<h2 id="读前须知"><a href="#读前须知" class="headerlink" title="读前须知"></a>读前须知</h2><h3 id="1-首次安装过程大约需要1小时左右（主要是下载centos5的国外源太慢了）"><a href="#1-首次安装过程大约需要1小时左右（主要是下载centos5的国外源太慢了）" class="headerlink" title="1. 首次安装过程大约需要1小时左右（主要是下载centos5的国外源太慢了）"></a>1. 首次安装过程大约需要1小时左右（主要是下载centos5的国外源太慢了）</h3><h3 id="2-本教程提到的所有文件："><a href="#2-本教程提到的所有文件：" class="headerlink" title="2. 本教程提到的所有文件："></a>2. 本教程提到的所有文件：</h3><p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1KH-yRRMl-_wqXaIZR_78mw">百度云链接</a> 提取码： yzkx</p>
+<p><a href="">私有云链接</a> 内部使用</p>
+<h3 id="3-由于作者太懒，以下一些截图是从网上截来的，可能不准确，请读者尽量配合文字说明一起食用，毕竟文字都是作者一字字码的。"><a href="#3-由于作者太懒，以下一些截图是从网上截来的，可能不准确，请读者尽量配合文字说明一起食用，毕竟文字都是作者一字字码的。" class="headerlink" title="3.由于作者太懒，以下一些截图是从网上截来的，可能不准确，请读者尽量配合文字说明一起食用，毕竟文字都是作者一字字码的。"></a>3.由于作者太懒，以下一些截图是从网上截来的，可能不准确，请读者尽量配合文字说明一起食用，毕竟文字都是作者一字字码的。</h3><hr>
+<h1 id="一、群晖NAS中安装-centos5-8"><a href="#一、群晖NAS中安装-centos5-8" class="headerlink" title="一、群晖NAS中安装 centos5.8"></a>一、群晖NAS中安装 centos5.8</h1><h2 id="1-安装Virtual-Machine-Manager"><a href="#1-安装Virtual-Machine-Manager" class="headerlink" title="1.安装Virtual Machine Manager"></a>1.安装Virtual Machine Manager</h2><p>打开群晖套件中心，搜索’vir’，安装Virtual Machine Manager套件。</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/1.md.png" alt="1"></p>
+<h2 id="2-安装映像文件"><a href="#2-安装映像文件" class="headerlink" title="2.安装映像文件"></a>2.安装映像文件</h2><p>打开Virtual Machine Manager套件，配置好后点击映像-&gt;新增，将你的iso文件添加到映像文件中。</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/2.md.png" alt="2"></p>
+<p>然后在虚拟机中点击新增，选中Linux</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/3.md.png" alt="3"></p>
+<p>根据你的内存大小配置，一般2h2g差不多</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/4.md.png" alt="4"></p>
+<p>配置虚拟硬盘大小，一般30G够用</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/5.md.png" alt="5"></p>
+<p>网络直接默认，其他设置里面启动ios文件选择4G那个，其他iso文件不用管，自动自动设置为是。</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/6.md.png" alt="6"></p>
+<p>然后是选择一个账户</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/7.md.png" alt="7"></p>
+<p>接着直接默认然后点击应用就可以了</p>
+<h2 id="3-安装centos-5-8"><a href="#3-安装centos-5-8" class="headerlink" title="3.安装centos 5.8"></a>3.安装centos 5.8</h2><p>安装完成后，先不着急开机，如果已经开机，可点击关机或者强制关机让它进入关机状态，紧接着选中虚拟机，点击操作-&gt;编辑-&gt;存储-&gt;设置</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/8.md.png" alt="8"></p>
+<p>然后将虚拟盘控制器设置为IDE控制器。</p>
+<p><a target="_blank" rel="noopener" href="https://nas.minkeren.com:8001/image/1EXX"><img src="https://nas.minkeren.com:8001/images/2021/01/14/9.md.png" alt="9.md.png"></a></p>
+<p>设置完成后，可以点击连接即可启动centos5.8系统，初次启动会进入centos5.8的安装步骤。</p>
+<p>这个页面直接按Enter过</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/10.md.png" alt="10"></p>
+<p>这里直接选择Skip按空格跳过</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/11.md.png" alt="11"></p>
+<p>然后进入安装界面</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/12.md.png" alt="12"></p>
+<p>首先是语言，选择简体中文，然后软键盘选择美国英语式，点下一步的时候选择是</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/13.md.png" alt="13"></p>
+<p>这里选择的是最下面的用户自定义分区，注：不是图片这个！！！选择然后进入分区的挂载，其挂载的大小大概如下分配（这里笔者暂时没找到图，只能口述,其实最重要的是/和swap，另外两个好像可以不要）</p>
+<p>‘/‘—20000</p>
+<p>‘home’—5000</p>
+<p>‘swap’—4000</p>
+<p>‘boot’—200</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/14.md.png" alt="14"></p>
+<p>紧接着是选择网络、选择时区、设置root密码，这些都直接下一步。然后来到图形界面设置，类似下图，不过这里笔者用winSCP和putty进行连接和文件操作，就不需要图形界面，所以用箭头那四个选项都不要选！！！</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/15.md.png" alt="15"></p>
+<p>然后等待安装完成重启即可使用centos5.8了</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/16.md.png" alt="16"></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h1 id="二、安装DNF服务端"><a href="#二、安装DNF服务端" class="headerlink" title="二、安装DNF服务端"></a>二、安装DNF服务端</h1><h2 id="1-使用putty和winscp连接你的centos"><a href="#1-使用putty和winscp连接你的centos" class="headerlink" title="1.使用putty和winscp连接你的centos"></a>1.使用putty和winscp连接你的centos</h2><p>使用网页连接进入centos，输入密码后可输入命令<code>ifconfig</code>来查看centos在局域网中的ip地址。</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/17.md.png" alt="17"></p>
+<p>然后为了避免不必要的麻烦，我们可以通过putty和winscp连接centos5.8来进行命令输入和文件传输。</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/18.md.png" alt="18"></p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/19.md.png" alt="19"></p>
+<p>首先，putty运行一下命令关闭防火墙：</p>
+<pre><code>chkconfig iptables off
+service iptables stop
+setenforce 0</code></pre>
+<h2 id="2-替换CentOS-Base-repo文件"><a href="#2-替换CentOS-Base-repo文件" class="headerlink" title="2.替换CentOS-Base.repo文件"></a>2.替换CentOS-Base.repo文件</h2><p>由于centos5版本太旧，国内大部分的镜像库都已经删除了，因此需要修改CentOS-Base.repo文件，下载国外源。</p>
+<p>打开winscp，进入到/etc/yum.repos.d目录下，替换CentOS-Base.repo。</p>
+<h2 id="3-启动一键安装服务端"><a href="#3-启动一键安装服务端" class="headerlink" title="3.启动一键安装服务端"></a>3.启动一键安装服务端</h2><p>将一键端的5个文件放在根目录</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/20.md.png" alt="20"></p>
+<p>putty运行命令:</p>
+<pre><code>cd /;chmod -R 0777 /install2;./install2</code></pre>
+<p>运行后首先会下载国外的源，30~90分钟不等，然后开始根据提示安装即可。</p>
+<h2 id="4-检查ip是否为外网ip"><a href="#4-检查ip是否为外网ip" class="headerlink" title="4.检查ip是否为外网ip"></a>4.检查ip是否为外网ip</h2><p>首先找到/home/neople/channel/cfg下的channel.cfg，将this_ip改为你的外网ip。</p>
+<p>然后找到/home/neople/game/cfg里面的siroco01.cfg、siroco11.cfg（游戏频道）和siroco52.cfg（决斗场频道），将里面的如下选项改为你的外网ip。</p>
+<pre><code>ip
+udp_ip_of_hades
+ipg_ip
+nxj_ipg_ip
+relay_ip
+stun_ip
+stun_ip
+stun_ip</code></pre>
+<p>然后在路由器里面映射如下端口</p>
+<pre><code>7000-7001
+10006-10031
+31003
+9006
+7200
+2311-2313
+11006-11031
+10315
+11315</code></pre>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/21.md.png" alt="21"></p>
+<h2 id="5-上传pvf、等级补丁和公钥到"><a href="#5-上传pvf、等级补丁和公钥到" class="headerlink" title="5.上传pvf、等级补丁和公钥到"></a>5.上传pvf、等级补丁和公钥到</h2><p>上传目录：/home/neople/game</p>
+<p>pvf–游戏的版本文件</p>
+<p>等级补丁–角色最高等级</p>
+<p>公钥–登录器识别（这里用的是统一登录器）</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/22.md.png" alt="22"></p>
+<p>上传完成后putty运行命令:</p>
+<pre><code>cd /root
+./run 启动服务器（几分钟）</code></pre>
+<p>等到跑出四国为止。若想关闭服务器，只需输入两次<code>./stop</code>即可。</p>
+<h2 id="6-统一登录器网关配置"><a href="#6-统一登录器网关配置" class="headerlink" title="6.统一登录器网关配置"></a>6.统一登录器网关配置</h2><p>首先，需要上传libmysqlclient.so.15到 usr/lib64下。</p>
+<p>然后啊，将网关配置文件放到root/下，右键设置权限为0777。</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/23.md.png" alt="23"></p>
+<p>完成后，只需要输入<code>./GateRestart</code>重启网关即可。</p>
+<p>Config.ini里面的ConnectKey必须与统一登录器的通讯密钥一致。</p>
+<h1 id="三、客户端配置"><a href="#三、客户端配置" class="headerlink" title="三、客户端配置"></a>三、客户端配置</h1><h2 id="1-安装客户端"><a href="#1-安装客户端" class="headerlink" title="1.安装客户端"></a>1.安装客户端</h2><p>解压那四个压缩包到dxf70目录即可</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/24.md.png" alt="24"></p>
+<h2 id="2-配置登录器"><a href="#2-配置登录器" class="headerlink" title="2.配置登录器"></a>2.配置登录器</h2><p>首先，将统一登录器5.4客户端补丁中的所有文件覆盖到dxf70目录下。</p>
+<p>然后，打开统一网关在线管理工具v5.4，在游戏地址和网关地址上填上你的公网ip，然后点击生成登录器，并将生成的登录放到dxf70目录下。</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/25.md.png" alt="25"></p>
+<p>注意：网关设置的通信密钥和登录器设置里面的通信密钥要相同。</p>
+<p>然后在网关设置-&gt;网关地址里面填上你的centos的局域网ip，其他不变，然后点击连接。</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/26.md.png" alt="26"></p>
+<p>连接之后点击实用工具-&gt;打开文件，选择你的pvf进行，点击获取当前密码-&gt;生成随机密码-&gt;设置密码生效进行加密，最后点击文件加密生成一个对应加密的pvf，将这个pvf放到dxf70目录。</p>
+<p>为什么不能直接放pvf？因为统一登录器客户端直接放pvf会启动失败，必须放加密的。</p>
+<p>完成后运行统一登录器，注册账号后点击进入游戏即可开始愉快地玩耍了。</p>
+<p><img src="https://nas.minkeren.com:8001/images/2021/01/14/27.md.png" alt="27"></p>
+<p>注意：win10直接点击登录，win7要右键管理员运行登录器。</p>
 <hr>
-<h1 id="一、安装yilia主题"><a href="#一、安装yilia主题" class="headerlink" title="一、安装yilia主题"></a>一、安装yilia主题</h1><p>安装主题很简单，只需要在博客根目录下右键打开Git Bash，然后输入以下代码即可安装。</p>
-<pre><code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code></pre>
-<p>安装完成后你的themes文件夹里会多出一个yilia目录，这就是主题目录了，下面对目录中的一些需要用到的文件或文件夹做简单的解释：</p>
-<pre>
-_config.yml                主题配置
-\layout                    主题布局目录
-    categories.ejs            分类界面布局
-    tag.ejs                标签界面布局
-    archive                归档界面布局
-    \_partial
-        article.ejs        文章布局
-        footer.ejs        页脚布局
-        left-col.ejs        个人信息界面布局
-        \post
-            word.ejs    自定义的文章布局
-\source                    主题源码目录
-</pre>
-
-<p>了解之后下面就可以开始主题编辑了，每次编辑后如果本地预览的话可以在博客根目录的Git Bash里面输入以下代码，然后即可在浏览器中输入<a target="_blank" rel="noopener" href="http://localhost:4000/%E6%9F%A5%E7%9C%8B%EF%BC%8C%E7%9C%8B%E5%AE%8C%E5%90%8E%E8%AE%B0%E5%BE%97ctrl">http://localhost:4000/查看，看完后记得ctrl</a> + c取消。</p>
-<pre><code> (hexo clean;hexo g;hexo s)    </code></pre>
-<p>如果要部署到github或者gitee上，可以输入以下代码进行部署：</p>
-<pre><code> (hexo clean;hexo g;hexo d)    </code></pre>
-<h1 id="二、整体配置"><a href="#二、整体配置" class="headerlink" title="二、整体配置"></a>二、整体配置</h1><h2 id="1-名字、签名"><a href="#1-名字、签名" class="headerlink" title="1.名字、签名"></a>1.名字、签名</h2><p>打开主题配置文件，在# Header和menu:之间插入以下代码：</p>
-<pre>
-author: 作者名字
-subtitle: 作者签名
-</pre>
-
-<h2 id="2-头像、网页图标"><a href="#2-头像、网页图标" class="headerlink" title="2.头像、网页图标"></a>2.头像、网页图标</h2><p>准备好一张.png的图片，不要太大，几十k就可以了。</p>
-<p>然后在博客根目录下创建文件夹source\assets\blogImg，将你的头像放进去。</p>
-<p>接着在你的主题配置文件里面搜索avatar，将你的路径和图片放进去，如下所示：</p>
-<pre>
-#注意: 冒号后面留一个空格
-avatar:  /assets/blogImg/图片名字.png    
-</pre>
-<p>图标也是同理，不过图标文件一般是16x16或者32x32的，记得修改大小，代码如下所示:</p>
-<pre>
-#注意: 冒号后面留一个空格
-favicon:  /assets/img/图标名字.png
-</pre>
-
-<h2 id="3-在页尾显示博客的访问总量、访问数"><a href="#3-在页尾显示博客的访问总量、访问数" class="headerlink" title="3.在页尾显示博客的访问总量、访问数"></a>3.在页尾显示博客的访问总量、访问数</h2><p>首先，要实现计数功能，要添加卜算子计数插件，打开页脚布局文件footer.ejs，在最后添加以下一行代码：</p>
-<pre><code>&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</code></pre>
-<p>然后继续在footer.ejs文件中，在其中间添加以下两行代码：</p>
-<pre><code>&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt; 总访问量: &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; /&lt;/span&gt;
-&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt; 访客数:&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;&lt;/span&gt;</code></pre>
-<p><img src="https://nas.minkeren.com:8001/images/2021/01/08/1062cbb49a4290228.md.png" alt="图1"></p>
-<p>完成后重新部署即可，效果展示：</p>
-<p><img src="https://nas.minkeren.com:8001/images/2021/01/08/28d89731f35f5e617.th.png" alt="图2"></p>
-<p><img src="https://nas.minkeren.com:8001/images/2021/01/08/34ff7c40728f8b90d.md.png" alt="图3"></p>
-<p>本地查看的时候访问量可能显示异常，别担心，放到远程仓库就好了。</p>
-<h1 id="二、文章配置"><a href="#二、文章配置" class="headerlink" title="二、文章配置"></a>二、文章配置</h1><h2 id="1-字数统计、阅读时长、阅读量"><a href="#1-字数统计、阅读时长、阅读量" class="headerlink" title="1.字数统计、阅读时长、阅读量"></a>1.字数统计、阅读时长、阅读量</h2><p>由于前面已经填了卜算子，这里就不需要再添加了。</p>
-<p>首先，在\layout_partial\post文件夹中新建一个自定义文章布局文件word.ejs，在其中添加如下代码:</p>
-<pre><code>&lt;div style=&quot;margin-top:10px;&quot;&gt;
-&lt;span class=&quot;post-time&quot;&gt;
-  &lt;span class=&quot;post-meta-item-icon&quot;&gt;
-&lt;i class=&quot;fa fa-keyboard-o&quot;&gt;&lt;/i&gt;
-&lt;span class=&quot;post-meta-item-text&quot; style=&quot;font-size: 16px;color: grey&quot;&gt;  字数统计: &lt;/span&gt;
-&lt;!--这里样式可以自己定制--&gt;
-&lt;span class=&quot;post-count&quot; style=&quot;font-size: 16px;color: grey&quot;&gt;&lt;%= wordcount(post.content) %&gt;字&lt;/span&gt;
-  &lt;/span&gt;
-&lt;/span&gt;
-
-&lt;span class=&quot;post-time&quot;&gt;
-  &amp;nbsp; | &amp;nbsp;
-  &lt;span class=&quot;post-meta-item-icon&quot;&gt;
-&lt;i class=&quot;fa fa-hourglass-half&quot;&gt;&lt;/i&gt;
-&lt;span class=&quot;post-meta-item-text&quot; style=&quot;font-size: 16px;color: grey&quot;&gt;  阅读时长: &lt;/span&gt;
-&lt;span class=&quot;post-count&quot; style=&quot;font-size: 16px;color: grey&quot;&gt;&lt;%= min2read(post.content) %&gt;分&lt;/span&gt;
-  &lt;/span&gt;
-&lt;/span&gt;
-&lt;/div&gt;</code></pre>
-<p>然后直接打开文章布局文件article.ejs，在其中添加代码如下所示：</p>
-<p><img src="https://nas.minkeren.com:8001/images/2021/01/08/4395bdff060130269.md.png" alt="图4"></p>
-<pre><code> &lt;header class=&quot;article-header&quot;&gt;
-&lt;%- partial(&#39;post/title&#39;, &#123;class_name: &#39;article-title&#39;&#125;) %&gt;
-&lt;% if (!post.noDate)&#123; %&gt;
-&lt;%- partial(&#39;post/date&#39;, &#123;class_name: &#39;archive-article-date&#39;, date_format: null&#125;) %&gt;
-
-         &lt;!-- 开始添加字数统计--&gt;
-&lt;%- partial(&#39;post/word&#39;) %&gt;
-&lt;!-- 添加完成 --&gt;
-
-         &lt;% &#125; %&gt;
-
-        &lt;!-- 开始添加字数统计2--&gt;
-
-        &lt;!-- 添加代码 --&gt;
-&lt;% if ( !index )&#123; %&gt;
-  &lt;span class=&quot;archive-article-date&quot;&gt;
-  阅读量 &lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;
-  &lt;/span&gt;
-&lt;% &#125; %&gt;
-
-  &lt;/header&gt;</code></pre>
-<p>至此，字数统计、阅读时长、阅读量就弄好了，赶紧部署到本地预览一下吧。</p>
-<p><img src="https://nas.minkeren.com:8001/images/2021/01/08/536873e935fd74e01.md.png" alt="图5"></p>
-<h2 id="2-文章分类的实现"><a href="#2-文章分类的实现" class="headerlink" title="2.文章分类的实现"></a>2.文章分类的实现</h2><p>如果我们坚持写下去的话文章就会越来越多，希望对某一类文章进行分类，这时可以在菜单栏添加一个分类的选项，并对其进行布局，具体步骤如下：</p>
-<h3 id="1-打开主题配置文件，在menu栏下加上如下内容"><a href="#1-打开主题配置文件，在menu栏下加上如下内容" class="headerlink" title="(1)打开主题配置文件，在menu栏下加上如下内容"></a>(1)打开主题配置文件，在menu栏下加上如下内容</h3><pre><code>menu:
-  主页: /home
-  分类: /categories</code></pre>
-<h3 id="2-打开Git-Bash，输入以下代码创建categories配置文件"><a href="#2-打开Git-Bash，输入以下代码创建categories配置文件" class="headerlink" title="(2)打开Git Bash，输入以下代码创建categories配置文件"></a>(2)打开Git Bash，输入以下代码创建categories配置文件</h3><pre><code>hexo new page categories</code></pre>
-<h3 id="3-打开-source-categories-index-md文件，修改如下："><a href="#3-打开-source-categories-index-md文件，修改如下：" class="headerlink" title="(3)打开\source\categories\index.md文件，修改如下："></a>(3)打开\source\categories\index.md文件，修改如下：</h3><pre><code>---
-title: 分类
-date: 2021-01-7 18:18:25
-toc: false
-comments: false
-layout: categories
----</code></pre>
-<h3 id="4-修改或覆盖-themes-yilia-layout-categories-ejs文件如下："><a href="#4-修改或覆盖-themes-yilia-layout-categories-ejs文件如下：" class="headerlink" title="(4)修改或覆盖\themes\yilia\layout\categories.ejs文件如下："></a>(4)修改或覆盖\themes\yilia\layout\categories.ejs文件如下：</h3><pre><code>&lt;article class=&quot;article article-type-post show&quot;&gt;
-  &lt;header class=&quot;article-header&quot; style=&quot;border-bottom: 1px solid #ccc&quot;&gt;
-  &lt;h1 class=&quot;article-title&quot; itemprop=&quot;name&quot;&gt;
-&lt;%= page.title %&gt;
-  &lt;/h1&gt;
-  &lt;/header&gt;
-
-  &lt;% if (site.categories.length)&#123; %&gt;
-  &lt;div class=&quot;category-all-page&quot;&gt;
-&lt;h3&gt;说明：给文章简单地做一下分类&lt;/h3&gt;
-&lt;h3&gt;共计&amp;nbsp;&lt;%= site.categories.length %&gt;&amp;nbsp;个分类&lt;/h3&gt;
-&lt;%- list_categories(site.categories, &#123;
-  show_count: true,
-  class: &#39;category-list-item&#39;,
-  style: &#39;list&#39;,
-  depth:3,   
-  separator: &#39;&#39;
-&#125;) %&gt;
-  &lt;/div&gt;
-  &lt;% &#125; %&gt;
-&lt;/article&gt;</code></pre>
-<h3 id="5-添加如下代码到themes-yilia-source-main-0cf68a-css中："><a href="#5-添加如下代码到themes-yilia-source-main-0cf68a-css中：" class="headerlink" title="(5)添加如下代码到themes\yilia\source\main.0cf68a.css中："></a>(5)添加如下代码到themes\yilia\source\main.0cf68a.css中：</h3><p><img src="https://nas.minkeren.com:8001/images/2021/01/08/6fbf0f0fd1eb4e6a7.md.png" alt="图6"></p>
-<pre><code>category-all-page &#123;
-margin: 30px 40px 30px 40px;
-position: relative;
-min-height: 70vh;
-  &#125;
-  .category-all-page h2 &#123;
-margin: 20px 0;
-  &#125;
-  .category-all-page .category-all-title &#123;
-text-align: center;
-  &#125;
-  .category-all-page .category-all &#123;
-margin-top: 20px;
-  &#125;
-  .category-all-page .category-list &#123;
-margin: 0;
-padding: 0;
-list-style: none;
-  &#125;
-  .category-all-page .category-list-item-list-item &#123;
-margin: 10px 15px;
-  &#125;
-  .category-all-page .category-list-item-list-count &#123;
-color: $grey;
-  &#125;
-  .category-all-page .category-list-item-list-count:before &#123;
-display: inline;
-content: &quot; (&quot;;
-  &#125;
-  .category-all-page .category-list-item-list-count:after &#123;
-display: inline;
-content: &quot;) &quot;;
-  &#125;
-  .category-all-page .category-list-item &#123;
-margin: 10px 10px;
-  &#125;
-  .category-all-page .category-list-count &#123;
-color: $grey;
-  &#125;
-  .category-all-page .category-list-count:before &#123;
-display: inline;
-content: &quot; (&quot;;
-  &#125;
-  .category-all-page .category-list-count:after &#123;
-display: inline;
-content: &quot;) &quot;;
-  &#125;
-  .category-all-page .category-list-child &#123;
-padding-left: 10px;
-  &#125;</code></pre>
-<p>至此，文章分类添加完毕，当修改或者新写一篇文章的时候，可以在文章中添加一行代码即可。以如下示例，就是将这篇文章归类到了一个”个人博客”的分类中，可以在菜单栏点击分类查看。</p>
-<p><img src="https://nas.minkeren.com:8001/images/2021/01/08/7b11219c188cf737f.md.png" alt="图7"></p>
-<pre><code>---
-title: 如何在Github上搭建个人博客--基础篇
-categories:
-- 个人博客
----</code></pre>
-<p>效果展示：</p>
-<p><img src="https://nas.minkeren.com:8001/images/2021/01/08/8319f2918287fb675.md.png" alt="图8"></p>
-<h2 id="3-文章标签的实现"><a href="#3-文章标签的实现" class="headerlink" title="3.文章标签的实现"></a>3.文章标签的实现</h2><p>当你写文章时，可以根据文章的方向、题材、内容确定一个或者多个标签，当我们需要查看某一类标签的文章时，就可以通过标签迅速查看。文章标签的实现和分类的实现差不多，这里就不过多阐述。</p>
-<h3 id="1-打开主题配置文件，在menu栏下加上如下内容-1"><a href="#1-打开主题配置文件，在menu栏下加上如下内容-1" class="headerlink" title="(1)打开主题配置文件，在menu栏下加上如下内容"></a>(1)打开主题配置文件，在menu栏下加上如下内容</h3><pre><code>menu:
-  主页: /home
-  标签: /tags
-  分类: /categories</code></pre>
-<h3 id="2-打开Git-Bash，输入以下代码创建tags配置文件"><a href="#2-打开Git-Bash，输入以下代码创建tags配置文件" class="headerlink" title="(2)打开Git Bash，输入以下代码创建tags配置文件"></a>(2)打开Git Bash，输入以下代码创建tags配置文件</h3><pre><code>hexo new page tags</code></pre>
-<h3 id="3-打开-source-categories-index-md文件，修改如下：-1"><a href="#3-打开-source-categories-index-md文件，修改如下：-1" class="headerlink" title="(3)打开\source\categories\index.md文件，修改如下："></a>(3)打开\source\categories\index.md文件，修改如下：</h3><pre><code>---
-title: 标签
-date: 2021-01-06 11:55:27
-type: tags
-comments: false
-layout: tag
----</code></pre>
-<h3 id="4-修改或覆盖-themes-yilia-layout-tag-ejs文件如下："><a href="#4-修改或覆盖-themes-yilia-layout-tag-ejs文件如下：" class="headerlink" title="(4)修改或覆盖\themes\yilia\layout\tag.ejs文件如下："></a>(4)修改或覆盖\themes\yilia\layout\tag.ejs文件如下：</h3><pre><code>&lt;article class=&quot;article article-type-post show&quot;&gt;
-  &lt;header class=&quot;article-header&quot; style=&quot;border-bottom: 1px solid #ccc&quot;&gt;
-  &lt;h1 class=&quot;article-title&quot; itemprop=&quot;name&quot;&gt;
-&lt;%= page.title %&gt;
-  &lt;/h1&gt;
-  &lt;/header&gt;
-
-  &lt;h3&gt;共计&amp;nbsp;&lt;%= site.tags.length %&gt;&amp;nbsp;个标签&lt;/h3&gt;
-  &lt;div class=&quot;tag-cloud&quot;&gt;
-&lt;%- tagcloud(&#123;
-  min_font: 20, 
-  max_font: 35, 
-  amount: 999
-&#125;) %&gt;
-  &lt;/div&gt;
-&lt;/article&gt;</code></pre>
-<h3 id="5-添加如下代码到themes-yilia-source-main-0cf68a-css中：-1"><a href="#5-添加如下代码到themes-yilia-source-main-0cf68a-css中：-1" class="headerlink" title="(5)添加如下代码到themes\yilia\source\main.0cf68a.css中："></a>(5)添加如下代码到themes\yilia\source\main.0cf68a.css中：</h3><pre><code>.tag-cloud &#123;
-    text-align:center;
-    padding:20px
-&#125;
-.tag-cloud a &#123;
-    margin:0 20px;
-    word-break:keep-all;
-    position:relative
-&#125;
-.tag-cloud a:hover::before &#123;
-    width:100%;
-    left:0;
-    right:auto
-&#125;
-.tag-cloud a::before &#123;
-    content:&quot;&quot;;
-    position:absolute;
-    width:0;
-    right:0;
-    bottom:0;
-    height:2px;
-    background:#08c;
-    -webkit-transition:width .3s ease;
-    transition:width .3s ease
-&#125;</code></pre>
-<p>当新写或修改文章时，可以在文章前边添加标签如下所示：</p>
-<p><img src="https://nas.minkeren.com:8001/images/2021/01/08/9f250d0d2d0e4118b.md.png" alt="图9"></p>
-<p>效果展示：</p>
-<p><img src="https://nas.minkeren.com:8001/images/2021/01/08/1090287be92cc793b9.md.png" alt="图10"></p>
-<p>至此，标签也添加完成了，最后就剩归档的添加了。</p>
-<h2 id="4-文章归档的实现"><a href="#4-文章归档的实现" class="headerlink" title="4.文章归档的实现"></a>4.文章归档的实现</h2><p>归档，其实就是把你写的所有文章按照日期进行排序，相比于之前两个，归档就比较简单了，只需要前三步就可以了。</p>
-<h3 id="1-打开主题配置文件，在menu栏下加上如下内容-2"><a href="#1-打开主题配置文件，在menu栏下加上如下内容-2" class="headerlink" title="(1)打开主题配置文件，在menu栏下加上如下内容"></a>(1)打开主题配置文件，在menu栏下加上如下内容</h3><pre><code>menu:
-  主页: /home
-  标签: /tags
-  分类: /categories
-  归档: /archives</code></pre>
-<h3 id="2-打开Git-Bash，输入以下代码创建-archives配置文件"><a href="#2-打开Git-Bash，输入以下代码创建-archives配置文件" class="headerlink" title="(2)打开Git Bash，输入以下代码创建/archives配置文件"></a>(2)打开Git Bash，输入以下代码创建/archives配置文件</h3><pre><code>hexo new page /archives</code></pre>
-<h3 id="3-打开-source-archives-index-md文件，修改如下："><a href="#3-打开-source-archives-index-md文件，修改如下：" class="headerlink" title="(3)打开\source\archives\index.md文件，修改如下："></a>(3)打开\source\archives\index.md文件，修改如下：</h3><pre><code>---
-title: 归档
-date: 2021-01-07 09:37:47
-toc: false
-comments: false
-layout: archive
----</code></pre>
-<p>效果展示：</p>
-<p><img src="https://nas.minkeren.com:8001/images/2021/01/08/1148f6813582d7c127.md.png" alt="图11"></p>
-<p>至此，菜单栏算是布置完成了。</p>
-<h2 id="5-文章、菜单栏插入图标"><a href="#5-文章、菜单栏插入图标" class="headerlink" title="5.文章、菜单栏插入图标"></a>5.文章、菜单栏插入图标</h2><p>菜单栏布置完成了，但笔者感觉仍然是光秃秃的，如果在主页前面有个<i class="fas fa-home"></i>这样的图标就好了。</p>
-<p>首先，需要下载图标库，这里选择的是<a target="_blank" rel="noopener" href="http://www.fontawesome.com.cn/">fontawesome</a>图标库，这里为了以后方便，笔者在淘宝上花了20大洋购买了其的本地图标库，下载好后将除了svgs的其他文件夹解压到themes\yilia\source目录(由于svgs太多图标，因此这里我只选了一些博客需要用到的图标传过去)。</p>
-<p><a target="_blank" rel="noopener" href="https://nas.minkeren.com:5001/sharing/o9Y7ftO3G">fontawesome私有云下载</a></p>
-<p>下载好后有两个压缩包，fa…压缩包里面主要放的本地图标文件，图标代码PDF主要是方便查找检索图标。</p>
-<p>接着需要在themes\yilia\layout_partial\head.js文件中添加以下带来来导入fontawesome的图标配置。</p>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/font-awesome.css&quot;&gt;</code></pre>
-<p>在一般文章中插入图标只需要输入以下代码即可:</p>
-<pre><code>&lt;i class=&quot;fas fa-图标名&quot;&gt;</code></pre>
-<p>而在菜单栏添加图标还需要修改D:\Blog\themes\yilia\layout_partial\left-col.ejs文件，代码所示如下：</p>
-<p><img src="https://nas.minkeren.com:8001/images/2021/01/08/122b8d6976b2c839e5.md.png" alt="图12"></p>
-<pre><code>&lt;nav class=&quot;header-menu&quot;&gt;
-        &lt;ul&gt;
-            &lt;% for (var i in theme.menu)&#123; %&gt;
-                &lt;%if (i === &quot;主页&quot; )&#123;%>
-    					<li><a href="<%- url_for(theme.menu[i]) %>"><i class="fas fa-home"></i><%= i %></a></li>
-    				<%&#125;else if (i === &quot;标签&quot; )&#123;%>
-    					<li><a href="<%- url_for(theme.menu[i]) %>"><i class="fas fa-tags"></i><%= i %></a></li>
-    				<%&#125;else if (i === &quot;分类&quot; )&#123;%>
-    					<li><a href="<%- url_for(theme.menu[i]) %>"><i class="fas fa-sort"></i><%= i %></a></li>
-    				<%&#125;else if (i === &quot;归档&quot; )&#123;%>
-    					<li><a href="<%- url_for(theme.menu[i]) %>"><i class="fas fa-archive"></i><%= i %></a></li>
-    				<%&#125;else&#123;%>
-    				<% continue %>
-    				<%&#125;%&gt;
-            &lt;%&#125;%&gt;
-            &lt;/ul&gt;
-        &lt;/nav&gt;</code></pre>
-<p>如此，即可将图标添加到菜单栏前面了。</p>
-<hr>
-<h2 id="常见问题解决"><a href="#常见问题解决" class="headerlink" title="常见问题解决"></a>常见问题解决</h2><p>1.为什么gihub的网站图标能显示，但gitee网站图标显示不出来？</p>
+<h2 id="常见问题解决"><a href="#常见问题解决" class="headerlink" title="常见问题解决"></a>常见问题解决</h2><p>1.win10无法组队的问题。<br>下载一个uu加速器，选择加速dnf，将两台电脑设置到统一节点即可组队。</p>
+<p>2.客户端点进入游戏会闪退。<br>win7的话把所有杀毒软件都关了，win10的话左下角搜索’病毒和威胁防护’-&gt;病毒和威胁防护设置-&gt;管理设置-&gt;关闭实时防护，或者排除项-&gt;添加或删除排除项,将整个客户端文件包括进去即可。</p>
 <hr>
 
 			
@@ -562,19 +388,23 @@ layout: archive
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">VMM虚拟机</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">centos 5.8</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">yilia主题</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">一键服务端</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">fontawesome图库</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">客户端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">统一登录器</a>
         		</li>
       		
 		</ul>
@@ -586,7 +416,7 @@ layout: archive
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/个人博客//" class="article-tag-list-link color5">个人博客</a>
+        			<a href="/categories/游戏服务器//" class="article-tag-list-link color1">游戏服务器</a>
         		</li>
       		
 		</ul>
@@ -641,7 +471,7 @@ layout: archive
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/01/07/2021-1-7%20%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2--%E4%B8%BB%E9%A2%98%E7%AF%87/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/01/14/2021-1-14%20%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--DNF%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -655,18 +485,9 @@ layout: archive
   
 <nav id="article-nav">
   
-    <a href="/2021/01/08/2021-1-8%20%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2--%E5%9F%9F%E5%90%8D%E7%AF%87/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          如何在Github上搭建个人博客--域名篇
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/01/06/2021-1-6%20%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2--%E5%9F%BA%E7%A1%80%E7%AF%87/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">如何在Github上搭建个人博客--基础篇</div>
+    <a href="/2021/01/10/2021-1-10%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E7%A7%81%E4%BA%BA%E5%BD%B1%E9%99%A2%E7%AF%87/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">黑群晖NAS之私人影院篇</div>
       <i class="icon-circle-right"></i>
     </a>
   

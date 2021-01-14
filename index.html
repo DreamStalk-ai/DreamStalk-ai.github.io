@@ -172,6 +172,526 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-2021-1-14 群晖NAS应用--DNF服务器搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/01/14/2021-1-14%20%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--DNF%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/">群晖NAS搭建游戏服务器--DNF篇</a>
+    </h1>
+  
+
+        
+        <a href="/2021/01/14/2021-1-14%20%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--DNF%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/" class="archive-article-date">
+  	<time datetime="2021-01-14T12:47:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-14</time>
+</a>
+		 
+		 <!-- 开始添加字数统计-->
+        <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+        <!--这里样式可以自己定制-->
+        <span class="post-count" style="font-size: 16px;color: grey">1.7k字</span>
+      </span>
+    </span>
+    
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+        <span class="post-count" style="font-size: 16px;color: grey">6分</span>
+      </span>
+    </span>
+</div>
+        <!-- 添加完成 -->
+		
+		 
+		 
+		<!-- 开始添加字数统计2-->
+		 
+		<!-- 添加代码 -->
+        
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+			
+				<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><h3 id="利用群晖NAS和公网ip搭建一个可以邀请外网的小伙伴来玩的DNF服务器"><a href="#利用群晖NAS和公网ip搭建一个可以邀请外网的小伙伴来玩的DNF服务器" class="headerlink" title="利用群晖NAS和公网ip搭建一个可以邀请外网的小伙伴来玩的DNF服务器"></a>利用群晖NAS和公网ip搭建一个可以邀请外网的小伙伴来玩的DNF服务器</h3>
+				
+				<a class="article-more-a" href="/2021/01/14/2021-1-14%20%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--DNF%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/#more">more >></a>
+			
+			
+		
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">VMM虚拟机</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">centos 5.8</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">一键服务端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">客户端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">统一登录器</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/游戏服务器//" class="article-tag-list-link color1">游戏服务器</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/01/14/2021-1-14%20%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--DNF%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2021-1-10 黑群晖NAS应用--私人影院篇" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/01/10/2021-1-10%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E7%A7%81%E4%BA%BA%E5%BD%B1%E9%99%A2%E7%AF%87/">黑群晖NAS之私人影院篇</a>
+    </h1>
+  
+
+        
+        <a href="/2021/01/10/2021-1-10%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E7%A7%81%E4%BA%BA%E5%BD%B1%E9%99%A2%E7%AF%87/" class="archive-article-date">
+  	<time datetime="2021-01-10T12:18:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-10</time>
+</a>
+		 
+		 <!-- 开始添加字数统计-->
+        <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+        <!--这里样式可以自己定制-->
+        <span class="post-count" style="font-size: 16px;color: grey">835字</span>
+      </span>
+    </span>
+    
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+        <span class="post-count" style="font-size: 16px;color: grey">3分</span>
+      </span>
+    </span>
+</div>
+        <!-- 添加完成 -->
+		
+		 
+		 
+		<!-- 开始添加字数统计2-->
+		 
+		<!-- 添加代码 -->
+        
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+			
+				<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><h3 id="在黑群晖nas主机上搭建自己的一个私人影院，可以分享视频。"><a href="#在黑群晖nas主机上搭建自己的一个私人影院，可以分享视频。" class="headerlink" title="在黑群晖nas主机上搭建自己的一个私人影院，可以分享视频。"></a>在黑群晖nas主机上搭建自己的一个私人影院，可以分享视频。</h3>
+				
+				<a class="article-more-a" href="/2021/01/10/2021-1-10%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E7%A7%81%E4%BA%BA%E5%BD%B1%E9%99%A2%E7%AF%87/#more">more >></a>
+			
+			
+		
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">蜗牛星际J1900</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">黑群晖NAS</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Video Station</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">TMDB</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/家庭主机//" class="article-tag-list-link color5">家庭主机</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/01/10/2021-1-10%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E7%A7%81%E4%BA%BA%E5%BD%B1%E9%99%A2%E7%AF%87/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2021-1-8 黑群晖NAS应用--私有云篇" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/01/08/2021-1-8%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E7%A7%81%E6%9C%89%E4%BA%91%E7%AF%87/">黑群晖NAS之私有云篇</a>
+    </h1>
+  
+
+        
+        <a href="/2021/01/08/2021-1-8%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E7%A7%81%E6%9C%89%E4%BA%91%E7%AF%87/" class="archive-article-date">
+  	<time datetime="2021-01-08T10:18:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-08</time>
+</a>
+		 
+		 <!-- 开始添加字数统计-->
+        <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+        <!--这里样式可以自己定制-->
+        <span class="post-count" style="font-size: 16px;color: grey">577字</span>
+      </span>
+    </span>
+    
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+        <span class="post-count" style="font-size: 16px;color: grey">2分</span>
+      </span>
+    </span>
+</div>
+        <!-- 添加完成 -->
+		
+		 
+		 
+		<!-- 开始添加字数统计2-->
+		 
+		<!-- 添加代码 -->
+        
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+			
+				<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><h3 id="在黑群晖nas主机上搭建自己的一个私有云，用于存放和分享文件。"><a href="#在黑群晖nas主机上搭建自己的一个私有云，用于存放和分享文件。" class="headerlink" title="在黑群晖nas主机上搭建自己的一个私有云，用于存放和分享文件。"></a>在黑群晖nas主机上搭建自己的一个私有云，用于存放和分享文件。</h3>
+				
+				<a class="article-more-a" href="/2021/01/08/2021-1-8%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E7%A7%81%E6%9C%89%E4%BA%91%E7%AF%87/#more">more >></a>
+			
+			
+		
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">蜗牛星际J1900</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">黑群晖NAS</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Synology Drive</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">百度云</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/家庭主机//" class="article-tag-list-link color5">家庭主机</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/01/08/2021-1-8%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E7%A7%81%E6%9C%89%E4%BA%91%E7%AF%87/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2021-1-8 黑群晖NAS应用--图库篇" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/01/08/2021-1-8%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E5%9B%BE%E5%BA%93%E7%AF%87/">黑群晖NAS之图库篇</a>
+    </h1>
+  
+
+        
+        <a href="/2021/01/08/2021-1-8%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E5%9B%BE%E5%BA%93%E7%AF%87/" class="archive-article-date">
+  	<time datetime="2021-01-08T08:18:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-08</time>
+</a>
+		 
+		 <!-- 开始添加字数统计-->
+        <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+        <!--这里样式可以自己定制-->
+        <span class="post-count" style="font-size: 16px;color: grey">482字</span>
+      </span>
+    </span>
+    
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+        <span class="post-count" style="font-size: 16px;color: grey">1分</span>
+      </span>
+    </span>
+</div>
+        <!-- 添加完成 -->
+		
+		 
+		 
+		<!-- 开始添加字数统计2-->
+		 
+		<!-- 添加代码 -->
+        
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+			
+				<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><h3 id="在黑群晖nas主机上搭建自己的一个图床，用于存放博客的贴图"><a href="#在黑群晖nas主机上搭建自己的一个图床，用于存放博客的贴图" class="headerlink" title="在黑群晖nas主机上搭建自己的一个图床，用于存放博客的贴图"></a>在黑群晖nas主机上搭建自己的一个图床，用于存放博客的贴图</h3>
+				
+				<a class="article-more-a" href="/2021/01/08/2021-1-8%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E5%9B%BE%E5%BA%93%E7%AF%87/#more">more >></a>
+			
+			
+		
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">蜗牛星际J1900</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">黑群晖NAS</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Chevereto图床</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">MarkdownPad2</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/家庭主机//" class="article-tag-list-link color5">家庭主机</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/01/08/2021-1-8%20%E9%BB%91%E7%BE%A4%E6%99%96NAS%E5%BA%94%E7%94%A8--%E5%9B%BE%E5%BA%93%E7%AF%87/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-2021-1-8 如何在Github上搭建个人博客--域名篇" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -179,7 +699,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/08/2021-1-8%20%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2--%E5%9F%9F%E5%90%8D%E7%AF%87/">2021-1-8 如何在Github上搭建个人博客--域名篇</a>
+      <a class="article-title" href="/2021/01/08/2021-1-8%20%E5%A6%82%E4%BD%95%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2--%E5%9F%9F%E5%90%8D%E7%AF%87/">如何在Github上搭建个人博客--域名篇</a>
     </h1>
   
 
@@ -658,11 +1178,55 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">蜗牛星际J1900</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">黑群晖NAS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Video Station</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">TMDB</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">VMM虚拟机</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">centos 5.8</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">一键服务端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">客户端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">统一登录器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">yilia主题</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">fontawesome图库</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -675,14 +1239,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ssh</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">yilia主题</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">fontawesome图库</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -699,6 +1255,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">DNS域名解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Synology Drive</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">百度云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Chevereto图床</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MarkdownPad2</a>
               </li>
             
             <div class="clearfix"></div>
