@@ -366,7 +366,7 @@ deploy:
  </pre>
 
 <p>注意，这里的repository是仓库中code里面的ssh地址，不是https地址。</p>
-<p>如果是Gitee，这里的repository就要改为<a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x65;&#101;&#x2e;&#x63;&#x6f;&#109;">&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x65;&#101;&#x2e;&#x63;&#x6f;&#109;</a>:minkeren/minkeren.git。</p>
+<p>如果是Gitee，这里的repository就要改为<a href="mailto:&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#101;&#101;&#46;&#x63;&#111;&#109;">&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#101;&#101;&#46;&#x63;&#111;&#109;</a>:minkeren/minkeren.git。</p>
 <p><img src="https://nas.minkeren.com:8001/images/2021/01/08/18.md.png" alt="图18"></p>
 <p>然后回到根目录中，打开Git Bash，安装Git部署插件，输入命令:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
@@ -524,29 +524,68 @@ hexo d            #生成网站静态文件并部署到制定Github仓库
 
 
   
-   <style>
-    .comments{margin:30px;padding:10px;background:#fff}
-    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-  </style>
   <div class="valine_comment"></div>
 <!--载入js，在</body>之前插入即可-->
 <!--Leancloud 操作库:-->
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <!--Valine 的核心代码库-->
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script src="../js/Valine.min.js"></script>
+
+<!-- 评论框美化 -->
+<style>
+    .v .veditor{min-height: 10rem;
+        background-image: url(https://nas.minkeren.com:8001/images/2021/01/21/u3513483541698432034fm26gp0.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: rgb(240,255,255);
+        resize: none;}
+	.v .vwrap{padding: 0 0 44px;}
+    .v .vwrap .vedit{padding-top:20px;}
+    .v .vwrap .vheader{width: 80%;bottom:0;position: absolute;background: #E1FFFF;}
+    .v .vinput{padding:10px 15px; text-align: center;}
+    .v .vwrap .vheader .vinput{border-bottom:0px}
+    .v .vwrap .vedit .vctrl{margin-top:-44px;right:0;position:absolute;margin-right:-3px;}
+    .v .vwrap .vrow{position:absolute;right:0;bottom:0;width:20%;padding-top:0px;}
+    .v .vrow {font-size: 0;padding: 0px 0;}
+    .v .vicon {margin-right: 15px;}
+    .v .vrow .vcol.vcol-30{display: none}
+    .v .vedit .vctrl span.vpreview-btn{display: none}
+    .v .vrow .vcol.vcol-70{width: 100%;}
+    .v .vsubmit.vbtn{border-radius: 0;padding: 0;color: #fff;line-height: 44px;width:100%;border: none;background:#87CEEB;}
+    .v .vcards .vcard .vh .vhead .vsys{background: #E1FFFF;}
+    .v .vcards .vcard .vh .vmeta .vat{font-size: 12px;display: block;margin-left: 15px;float: right;color: #fff;background-color: #87CEEB;line-height: 20px;padding: 0 6px;border-radius: 3px;}
+    @media screen and (max-width: 520px){
+    .v .vwrap .vheader .vinput{width: 33.33%;padding:10px 5px;}  
+    }
+</style>
+
 <script>
-  var notify = 'true' == true ? true : false;
+  var notify = 'false' == true ? true : false;
   var verify = 'false' == true ? true : false;
   new Valine({
       // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
       av: AV,
       el: '.valine_comment',
-      emoticon_url: 'https://cloud.panjunwen.com/alu',
-      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+	  //enableQQ: true,
+      //emoticon_url: 'https://cloud.panjunwen.com/alu',
+      //emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
       app_id: 'T1zIgL9B5zauSnVY3WqX5Xcz-gzGzoHsz',
       app_key: 'MJloEMvqdsAnadstD7LnSAOy',
+	  avatar: 'monsterid',
+	  notify: true,
       placeholder: '哒哒哒哒哒'
     });
+ 
+</script>
+
+<!-- 今日诗词：随机返回一句古诗词名句的接口，宅到用来做 Valine 的 placeholder 显示内容 -->
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+    jinrishici.load(function(result) {
+        var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author;
+        document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+    })
 </script>
   
   
@@ -676,15 +715,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">gitee</a>
+                <a href="javascript:void(0)" class="js-tag color3">yilia主题</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ssh</a>
+                <a href="javascript:void(0)" class="js-tag color4">fontawesome图库</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -708,11 +743,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">yilia主题</a>
+                <a href="javascript:void(0)" class="js-tag color1">gitee</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">fontawesome图库</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ssh</a>
               </li>
              
               <li class="article-tag-list-item">
